@@ -54,6 +54,6 @@ typedef struct instruction_s
 
 void free_stack(stack_t *head);
 void addnode(stack_t **head, int n);
-void addqueue(stack_t **head, int n);;
+void addqueue(stack_t **head, int n);
 #endif
 
