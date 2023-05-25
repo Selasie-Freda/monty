@@ -52,10 +52,11 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+void f_stack(stack_t **head, unsigned int counter);
 void free_stack(stack_t *head);
 void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
-
+void f_queue(stack_t **head, unsigned int counter);
 #endif
 
